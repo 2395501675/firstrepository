@@ -9,19 +9,12 @@
 </head>
 <body>
 	<p>第一种，不能拍照</p>
-	<input type="file">type="file"</input><br/>
+	<input type="file"></input><br/>
 	<p>第二种，不能看到pdf</p>
   <input type="file" accept="image/*" ><br/>
 	
   
-  <div id="counter">
-    num:{{counter}}
-    <span >message</span>
-    <table>
-      <tr is="vue:todo-item" :author="author"></tr>
-      <!-- <todo-item :todo="message"></todo-item> -->
-    </table>
-  </div>
+
   <script>
     const TodoItem = {
       props:{
