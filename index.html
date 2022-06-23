@@ -1,59 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://unpkg.com/vue@next"></script>
-</head>
-<body>
-	<p>第一种，不能拍照</p>
-	<input type="file"></input><br/>
-	<p>第二种，不能看到pdf</p>
-  <input type="file" accept="image/*" ><br/>
-	
-  
-
-  <script>
-    const TodoItem = {
-      props:{
-        author: Person
-      },
-      data(){
-        return {
-          self:'self'
-        }
-      },
-      mounted: function(){
-        console.log(11221,this.author,this.firstName)
-      },
-      template: `<tr><td>{{self}}-- {{author.firstName}}</td> </tr>`
-    }
-    function Person (firstName,lastName) {
-      this.firstName = firstName
-      this.lastName = lastName
-    }
-    const root = {
-      data() {
-        return {
-          counter: 0,
-          author: new Person('N','L')
-        }
-      },
-      mounted() {
-        this.counter++
-      },
-      methods:{
-        aa() {
-          console.log(2)
-        }
-      }
-    }
-    const app = Vue.createApp(root).component('TodoItem',TodoItem)
-    let vm = app.mount('#counter')
-    console.log(111,vm.$data)
-    console.log('vm',vm,'app',app,'root',root)
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="./index.3736a61e.js"></script>
+    <link rel="stylesheet" href="./index.260ab7bd.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  </body>
 </html>
