@@ -10,4 +10,14 @@ export default defineConfig({
       '@':path.resolve(__dirname,'./src')
     }
   },
+  build:{
+    outDir:'firstrepository'
+    // rollupOptions:{
+    //   output:{
+    //     chunkFileNames:'[name]-[hash].js',
+    //     entryFileNames:"[name]-[hash].js",
+    //     assetFileNames:"[ext]/name-[hash].[ext]"
+    //   }
+    // }
+  }
 })
