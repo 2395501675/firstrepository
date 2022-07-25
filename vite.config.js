@@ -4,20 +4,20 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base:'/firstrepository/',
+  base:'./',
   resolve:{
     alias:{
       '@':path.resolve(__dirname,'./src')
     }
   },
   build:{
-    outDir:'firstrepository'
-    // rollupOptions:{
-    //   output:{
-    //     chunkFileNames:'[name]-[hash].js',
-    //     entryFileNames:"[name]-[hash].js",
-    //     assetFileNames:"[ext]/name-[hash].[ext]"
-    //   }
-    // }
+    outDir:'dist',
+    rollupOptions:{
+      output:{
+        chunkFileNames:'[hash].js',
+        entryFileNames:"[hash].js",
+        assetFileNames:"[ext]/name-[hash].[ext]"
+      }
+    }
   }
 })
