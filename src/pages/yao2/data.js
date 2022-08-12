@@ -3335,6 +3335,7 @@ const chengyao = [
                 list: [
                     { name: '礞石滚痰丸' },
                     { name: '清气化痰丸' },
+                    { name: '复方鲜竹沥液' },
                 ]
             },
             {
@@ -3357,61 +3358,89 @@ const chengyao = [
             {
                 name: '散寒止咳剂',
                 list: [
-                    { name: '通宣理肺丸' },
-                    { name: '杏苏止咳颗粒（糖浆、口服液）' },
+                    { 
+                        name: '通宣理肺丸',
+                        gongneng:'解表散寒，宣肺止咳'
+                    },
+                    { name: '杏苏止咳颗粒（糖浆、口服液）',
+                    gongneng:'宣肺散寒，止咳祛痰'
+                 },
                 ]
             },
             {
                 name: '清肺止咳剂',
                 list: [
-                    { name: '清肺抑火丸' },
-                    { name: '蛇胆川贝散（胶囊、软胶囊）' },
-                    { name: '橘红丸' },
-                    { name: '急支糖浆' },
-                    { name: '强力枇杷露（胶囊）' },
+                    { name: '清肺抑火丸' ,
+                    gongneng:'清肺止咳，化痰通便'
+                },
+                    { name: '蛇胆川贝散（胶囊、软胶囊）',
+                    gongneng:'清肺，止咳，祛痰' },
+                    { name: '橘红丸',
+                    gongneng:'清肺，化痰，止咳'
+                 },
+                    { name: '急支糖浆' ,
+                    gongneng:'清热化痰，宣肺止咳'
+                },
+                    { name: '强力枇杷露（胶囊）',
+                gongneng:'清热化痰，敛肺止咳' },
+                    { name: '川贝止咳露',
+                gongneng:'止嗽祛痰' },
                 ]
             },
             {
                 name: '润肺止咳剂',
                 list: [
-                    { name: '养阴清肺膏' },
-                    { name: '二母宁嗽丸' },
-                    { name: '蜜炼川贝枇杷膏' },
+                    { name: '养阴清肺膏',
+                    gongneng:'养阴润燥，清肺利咽' },
+                    { name: '二母宁嗽丸',
+                    gongneng:'清肺润燥，化痰止咳' },
+                    { name: '蜜炼川贝枇杷膏',
+                gongneng:'清热润肺，化痰止咳' },
                 ]
             },
             {
                 name: '发表化饮平喘剂',
                 list: [
-                    { name: '小青龙胶囊（合剂、颗粒、糖浆）', important: 1 },
-                    { name: '桂龙咳喘宁胶囊', important: 1 },
+                    { name: '小青龙胶囊（合剂、颗粒、糖浆）', 
+                    important: 1 ,
+                gongneng:'解表化饮，止咳平喘'},
+                    { name: '桂龙咳喘宁胶囊', important: 1 ,
+                    gongneng:'化痰止咳，降气平喘'
+                },
                 ]
             },
             {
                 name: '泄热平喘剂',
                 list: [
-                    { name: '止嗽定喘口服液 （=麻杏石甘汤）', important: 1 },
+                    { name: '止嗽定喘口服液 （=麻杏石甘汤）',
+                     important: 1,
+                    gongneng:'辛凉宣泄，清肺平喘'},
                 ]
             },
             {
                 name: '化痰平喘剂',
                 list: [
-                    { name: '降气定喘丸', important: 1 },
-                    { name: '蠲哮片', important: 1 },
+                    { name: '降气定喘丸', important: 1,
+                    gongneng:'降气定喘，祛痰止咳'
+                 },
+                    { name: '蠲哮片', important: 1 ,
+                gongneng:'泻肺除壅，涤痰祛瘀，利气平喘'},
                 ]
             },
             {
                 name: '补肺平喘剂',
                 list: [
-                    { name: '人参保肺丸', important: 1 },
+                    { name: '人参保肺丸', important: 1 ,
+                gongneng:'益气补肺，止嗽定喘'},
                 ]
             },
             {
                 name: '纳气平喘剂',
                 list: [
-                    { name: '苏子降气丸', important: 1 },
-                    { name: '七味都气丸', important: 1 },
-                    { name: '固本咳喘片' },
-                    { name: '蛤蚧定喘丸' },
+                    { name: '苏子降气丸', important: 1,gongneng:'降气化痰，温肾纳气' },
+                    { name: '七味都气丸', important: 1,gongneng:'补肾纳气，涩精止遗' },
+                    { name: '固本咳喘片',gongneng:'益气固表，健脾补肾' },
+                    { name: '蛤蚧定喘丸',gongneng:'滋阴清肺，止咳平喘' },
                 ]
             },
         ]
