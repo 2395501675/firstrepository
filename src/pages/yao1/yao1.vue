@@ -1,5 +1,5 @@
 <template>
-  <h2>yao2</h2>
+  <h2>yao1</h2>
   <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
     <el-tab-pane label="药化" name="first">
       <el-tabs class="demo-tabs">

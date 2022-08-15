@@ -25,6 +25,14 @@ const basicRoutes = [
             title: 'yao2',
         },
     },
+    {
+        path: '/yaozong',
+        name: 'yaozong',
+        component: () => import('@/pages/yaozong/yaozong.vue'),
+        meta: {
+            title: 'yaozong',
+        },
+    },
 ]
 
 
