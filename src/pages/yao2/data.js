@@ -3847,6 +3847,7 @@ const chengyao = [
                         name: '生肌敛疮剂',
                         list: [
                             { name: '生肌玉红膏' },
+                            { name: '紫草膏' },
                             { name: '拔毒生肌散' },
                         ]
                     },
@@ -3868,6 +3869,7 @@ const chengyao = [
                 name: '瘰核乳癖剂-散结消核剂',
                 list: [
                     { name: '内消瘰疬丸' },
+                    { name: '小金丸' },
                     { name: '阳和解凝膏' },
                     { name: '乳癖消胶囊' },
                 ]
