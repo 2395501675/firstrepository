@@ -33,6 +33,14 @@ const basicRoutes = [
             title: 'yaozong',
         },
     },
+    {
+        path: '/fagui',
+        name: 'fagui',
+        component: () => import('@/pages/fagui/fagui.vue'),
+        meta: {
+            title: 'fagui',
+        },
+    },
 ]
 
 
