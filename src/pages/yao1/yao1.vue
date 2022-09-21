@@ -56,21 +56,10 @@
       </el-tabs>
     </el-tab-pane>
     <el-tab-pane label="鉴定" name="second">
-      <div v-for="lei in jianding" :key="lei.title">
-        <p>{{lei.title}}</p>
-      <ul>
-        <li v-for="(yao,index) in lei.children" :key="yao.title">
-          <b>{{index+1}}. {{yao.title}}</b>
-          <!-- <p>
-            <span>{{yao.fenlei}}</span>
-            <span>{{yao.jiagong}}</span>
-            <span>{{yao.buwei}}</span>
-          </p> -->
-          
-        </li>
-      </ul>
-      </div>
-      
+      <el-tree
+            :data="jianding"
+            node-key="id"
+          />
     </el-tab-pane>
     <el-tab-pane label="制剂" name="third">
       <el-tree
