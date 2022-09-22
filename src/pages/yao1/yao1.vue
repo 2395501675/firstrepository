@@ -60,6 +60,10 @@
             :data="jianding"
             node-key="id"
           />
+      <el-tree
+            :data="keshu"
+            node-key="id"
+          />
     </el-tab-pane>
     <el-tab-pane label="制剂" name="third">
       <el-tree
@@ -71,7 +75,7 @@
   </el-tabs>
 </template>
 <script lang="ts" setup>
-import { tiqv, lihuaxingzhi, yaohuafenlun,jianding,zhiji } from "./data.js";
+import { tiqv, lihuaxingzhi, yaohuafenlun,jianding,zhiji,keshu } from "./data.js";
 
 import { ref } from "vue";
 import type { TabsPaneContext } from "element-plus";
