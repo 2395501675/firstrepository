@@ -1,6 +1,6 @@
 <template>
   <h2>yao1</h2>
-  <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
+  <el-tabs v-model="activeName" class="demo-tabs">
     <el-tab-pane label="药化" name="first">
       <el-tabs class="demo-tabs">
         <el-tab-pane label="总论" name="first1">
@@ -80,7 +80,7 @@ import { tiqv, lihuaxingzhi, yaohuafenlun,jianding,zhiji,keshu } from "./data.js
 import { ref } from "vue";
 import type { TabsPaneContext } from "element-plus";
 
-const activeName = ref("first");
+const activeName = ref("second");
 
 </script>
 <style>
