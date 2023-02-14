@@ -10,6 +10,14 @@ const basicRoutes = [
         },
     },
     {
+        path: '/bencao-shennong',
+        name: 'bencao-shennong',
+        component: () => import('@/pages/bencao-shennong/index.vue'),
+        meta: {
+            title: 'bencao-shennong',
+        },
+    },
+    {
         path: '/yao1',
         name: 'yao1',
         component: () => import('@/pages/yao1/yao1.vue'),
