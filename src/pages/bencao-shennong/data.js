@@ -1,45 +1,71 @@
-const tiqv = [
+
+const menuList = [
   {
-    id: 1,
-    label: '溶剂法',
-    children: [
+    title:'总论',
+    submenu:[
       {
-        id: 4,
-        label: '浸渍法',
-      },
-      {
-        id: 4,
-        label: '渗漉法',
-      },
-      {
-        id: 4,
-        label: '煎煮法',
-      },
-      {
-        id: 4,
-        label: '回流法',
-      },
-      {
-        id: 4,
-        label: '连续回流法',
-      },
-    ],
+        title:'药和处方'
+      }
+    ]
   },
   {
-    id: 2,
-    label: '水蒸气蒸馏法',
+    title:'上经',
+    submenu:[
+      {
+        title:'玉石类',
+      },
+      {
+        title:'草药类',
+      },
+      {
+        title:'木头类',
+      },
+      {
+        title:'人体类',
+      },
+      {
+        title:'走兽类',
+      },
+      {
+        title:'家禽类',
+      },
+      {
+        title:'鱼虫类',
+      },
+      {
+        title:'果实类',
+      },
+      {
+        title:'米谷类',
+      },
+      {
+        title:'菜类',
+      },
+    ]
   },
   {
-    id: 2,
-    label: '升华法',
+    title:'中经',
+    submenu:[
+      {
+        title:''
+      }
+    ]
   },
   {
-    id: 2,
-    label: '超声法',
+    title:'下经',
+    submenu:[
+      {
+        title:''
+      }
+    ]
   },
   {
-    id: 2,
-    label: '临界流体萃取法',
+    title:'增补神农本草不足部分',
+    submenu:[
+      {
+        title:''
+      }
+    ]
   },
 ]
 const lihuaxingzhi = '性状、挥发性、旋光性、水中溶解性、有机溶剂中溶解性、酸性、碱性、荧光性质、发泡性、溶血性、显色反应、沉淀反应、水解反应、酶解反应、氧化还原反应等'
@@ -2166,4 +2192,4 @@ const jianding = jianding1.map(item => {
   item.children = item.children.map((c, index) => ({ ...c, label: `${index + 1}.${c.label}` }))
   return item
 })
-export { tiqv, lihuaxingzhi, yaohuafenlun, jianding, zhiji, keshu }
+export { menuList, lihuaxingzhi, yaohuafenlun, jianding, zhiji, keshu }
