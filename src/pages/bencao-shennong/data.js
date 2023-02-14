@@ -60,7 +60,7 @@ const menuList = [
     ]
   },
   {
-    title:'增补神农本草不足部分',
+    title:'增补',
     submenu:[
       {
         title:''
