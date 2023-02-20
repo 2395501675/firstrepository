@@ -32,6 +32,7 @@
               @click="(e) =>showyao(child,e)"
             >
               {{ child.title }}
+              {{child.danweiyao && child.danweiyao.filter(i =>i.changyong).length + '/'}}{{child.danweiyao && child.danweiyao.length}}
             </el-menu-item>
           </template>
         </el-sub-menu>
@@ -89,20 +90,10 @@ const filterTag = (value, row) => {
   return row.changyong === value
 }
 
-const tableRowClassName = ({
-  row,
-  rowIndex,
-}) => {
-  console.log(111,row)
-  // if (row.changyong === 1) {
-  //   return 'success-row'
-  // }
-  return ''
-}
+
 const danweiyao = ref([])
 function showyao(item) {
   danweiyao.value = item.danweiyao
-  console.log(1111,item,danweiyao)
 }
 
 const filterTableData = computed(() =>
