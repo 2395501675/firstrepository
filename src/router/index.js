@@ -18,6 +18,30 @@ const basicRoutes = [
         },
     },
     {
+        path: '/huangdineijing-suwen',
+        name: 'huangdineijing',
+        component: () => import('@/pages/huangdineijing-suwen/index.vue'),
+        meta: {
+            title: 'huangdineijing',
+        },
+    },
+    {
+        path: '/jingui',
+        name: 'jingui',
+        component: () => import('@/pages/jingui/index.vue'),
+        meta: {
+            title: 'jingui',
+        },
+    },
+    {
+        path: '/shanghan',
+        name: 'shanghan',
+        component: () => import('@/pages/shanghan/index.vue'),
+        meta: {
+            title: 'shanghan',
+        },
+    },
+    {
         path: '/yao1',
         name: 'yao1',
         component: () => import('@/pages/yao1/yao1.vue'),
