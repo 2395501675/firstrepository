@@ -12,7 +12,14 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  background:url('@/assets/EGKL-fxqnsks4841180.png')no-repeat;
+  background-position: right top;
+  background-size:200px;
+  padding-right:200px;
+}
+p{
+  padding:0 10px;
+  text-indent: 20px;
 }
 </style>

@@ -8,7 +8,7 @@
         @close="handleClose"
       >
         <el-sub-menu v-for="(menu, i) in menuList" :key="menu.title" :index="i">
-          <template #title>{{i+1}}.{{ menu.title }}</template>
+          <template #title><span  @click="() =>showYunwen(menu)">{{i+1}}.{{ menu.title }}</span></template>
           <template v-for="(child, childIndex) in menu.submenu">
             <el-sub-menu
               :index="i + '-' + childIndex"
@@ -38,8 +38,8 @@
       </el-menu>
     </div>
     <div style="width:100%" >
-      
-      
+      <p><b>{{currentYW.title}}</b></p>
+      <p v-for="(p, index) in currentYW.yuanwen" :key="index" :style="{color:textColor[p.person]}"> {{p.content}}</p>
     </div>
 </div>
    
@@ -53,7 +53,16 @@ const search = ref('')
 const filterTag = (value, row) => {
   return row.changyong === value
 }
-
+const textColor={
+  'pangbai':'',
+  'huangdi':'brown',
+  'qibo':'blue'
+}
+const currentYW = ref({})
+function showYunwen(item) {
+  currentYW.value = item
+  console.log(111,item,currentYW)
+}
 
 const danweiyao = ref([])
 function showyao(item) {
@@ -82,4 +91,5 @@ li {
 .el-table .success-row {
   --el-table-tr-bg-color: var(--el-color-success-light-9);
 }
+
 </style>
