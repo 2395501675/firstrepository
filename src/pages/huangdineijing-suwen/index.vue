@@ -123,6 +123,10 @@ const filterTableData = computed(() =>
 )
 </script>
 <style>
+.el-menu-vertical-demo{
+  height:calc(100vh - 50px);
+  overflow:auto;
+}
 .demo-tabs > .el-tabs__content {
   padding: 32px;
 }
