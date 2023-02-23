@@ -1,46 +1,87 @@
 <template>
 <div style="display:flex">
  <div style="min-width:270px">
+     <el-switch v-model="isCollapse" active-text="收起"
+    inactive-text="展示" />
       <el-menu
-        default-active="2"
+        :collapse="isCollapse"
+        default-active="1"
         class="el-menu-vertical-demo"
         @open="handleOpen"
         @close="handleClose"
       >
-        <el-sub-menu v-for="(menu, i) in menuList" :key="menu.title" :index="i">
-          <template #title><span  @click="() =>showYunwen(menu)">{{i+1}}.{{ menu.title }}</span></template>
-          <template v-for="(child, childIndex) in menu.submenu">
-            <el-sub-menu
-              :index="i + '-' + childIndex"
-              :key="child.title"
-              v-if="child.submenu"
-            >
-              <template #title>{{ child.title }}</template>
-              <el-menu-item
-                v-for="(third, thirdIndex) in child.submenu"
-                :index="i + '-' + childIndex + '-' + thirdIndex"
-                :key="third.title"
+      <template v-for="(menu, i) in menuList" :key="menu.title" >
+        <el-sub-menu v-if="menu.submenu" :index="i">
+            <template #title>
+              <div @click="() =>showYunwen(menu)">
+                <i v-show="isCollapse">{{i+1}}<el-icon><Sunrise color="red"/></el-icon></i>
+                <span v-show="!isCollapse" >{{i+1}}.{{ menu.title }}</span>
+              </div>
+            </template>
+            <template v-for="(child, childIndex) in menu.submenu">
+              <el-sub-menu
+                :index="i + '-' + childIndex"
+                :key="child.title"
+                v-if="child.submenu"
               >
-                {{ third.title }}
+                <template #title>{{ child.title }}</template>
+                <el-menu-item
+                  v-for="(third, thirdIndex) in child.submenu"
+                  :index="i + '-' + childIndex + '-' + thirdIndex"
+                  :key="third.title"
+                >
+                  {{ third.title }}
+                </el-menu-item>
+              </el-sub-menu>
+              <el-menu-item
+                v-else
+                :index="i + '-' + childIndex"
+                :key="child.title"
+                @click="(e) =>showyao(child,e)"
+              >
+                {{ child.title }}
+                {{child.danweiyao && child.danweiyao.filter(i =>i.changyong).length + '/'}}{{child.danweiyao && child.danweiyao.length}}
               </el-menu-item>
-            </el-sub-menu>
-            <el-menu-item
-              v-else
-              :index="i + '-' + childIndex"
-              :key="child.title"
-              @click="(e) =>showyao(child,e)"
-            >
-              {{ child.title }}
-              {{child.danweiyao && child.danweiyao.filter(i =>i.changyong).length + '/'}}{{child.danweiyao && child.danweiyao.length}}
-            </el-menu-item>
-          </template>
-        </el-sub-menu>
+            </template>
+          </el-sub-menu>
+        <el-menu-item else :index="i">
+          <div @click="() =>showYunwen(menu)">
+            <i v-show="isCollapse">{{i+1}}<el-icon><Sunrise color="red"/></el-icon></i>
+            <span v-show="!isCollapse" >{{i+1}}.{{ menu.title }}</span>
+          </div>
+        </el-menu-item>
+      </template>
+    
+        
       </el-menu>
     </div>
-    <div style="width:100%" >
+    <div>
+ <table border style="border-collapse:collapse;">
+      <tr>
+        <td>木</td>
+        <td>火</td>
+        <td>土</td>
+        <td>金</td>
+        <td>水</td>
+      </tr>
+      <tr>
+        <td>甲乙</td>
+        <td>丙丁</td>
+        <td>戊己</td>
+        <td>庚辛</td>
+        <td>壬葵</td>
+      </tr>
+      <tr>
+        <td>子</td>
+      </tr>
+    </table>
+     <div style="width:100%" >
       <p><b>{{currentYW.title}}</b></p>
       <p v-for="(p, index) in currentYW.yuanwen" :key="index" :style="{color:textColor[p.person]}"> {{p.content}}</p>
     </div>
+    </div>
+   
+   
 </div>
    
 </template>
@@ -49,7 +90,11 @@ import {
   menuList,
 } from './data.js'
 import{ref,computed} from 'vue'
+import {
+  Sunrise,
+} from '@element-plus/icons-vue'
 const search = ref('')
+const isCollapse = ref(false)
 const filterTag = (value, row) => {
   return row.changyong === value
 }
