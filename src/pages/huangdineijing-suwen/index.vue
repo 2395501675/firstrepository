@@ -1,6 +1,6 @@
 <template>
 <div style="display:flex">
- <div style="min-width:270px">
+ <div style="max-width:270px">
      <el-switch v-model="isCollapse" active-text="收起"
     inactive-text="展示" />
       <el-menu
@@ -75,7 +75,7 @@
         <td>子</td>
       </tr>
     </table>
-     <div style="width:100%" >
+     <div style="width:100%;margin-top:71px;" >
       <p><b>{{currentYW.title}}</b></p>
       <p v-for="(p, index) in currentYW.yuanwen" :key="index" :style="{color:textColor[p.person]}"> {{p.content}}</p>
     </div>

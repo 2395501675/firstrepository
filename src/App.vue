@@ -16,7 +16,6 @@
   background:url('@/assets/EGKL-fxqnsks4841180.png')no-repeat;
   background-position: right top;
   background-size:200px;
-  padding-right:200px;
 }
 p{
   padding:0 10px;
