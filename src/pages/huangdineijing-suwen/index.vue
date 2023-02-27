@@ -101,7 +101,8 @@ const filterTag = (value, row) => {
 const textColor={
   'pangbai':'',
   'huangdi':'brown',
-  'qibo':'blue'
+  'qibo':'blue',
+  'leigong':'green'
 }
 const currentYW = ref({})
 function showYunwen(item) {
