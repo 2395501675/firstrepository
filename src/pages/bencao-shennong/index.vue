@@ -41,7 +41,7 @@
         </el-sub-menu>
       </el-menu>
     </div>
-    <div style="width: 100%">
+    <div style="width: 100%;padding:10px 0;">
       <el-table :data="zongyi.wuxing" v-if="false" style="width: 100%">
         <el-table-column prop="weiyi" label="味义" />
         <el-table-column prop="seyi" label="色义" />
@@ -152,8 +152,8 @@
       <el-input v-model="search" size="large" placeholder="Type to search" />
       <el-table
         :data="filterTableData"
-        height="800"
-        style="width: 100%"
+        height="600"
+        style="width: 100%;"
         :row-class-name="tableRowClassName"
       >
         <el-table-column
