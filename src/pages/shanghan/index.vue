@@ -30,14 +30,14 @@
               :key="child.title"
               @click="(e) =>showyao(child,e)"
             >
-              {{}}{{menu.lastIndex + childIndex + 1}}.{{ child.title }}
-              {{child.danweiyao && child.danweiyao.filter(i =>i.changyong).length + '/'}}{{child.danweiyao && child.danweiyao.length}}
+              {{menu.lastIndex + childIndex + 1}}.{{ child.title }}
+              {{child.yuanwen && child.yuanwen.filter(i =>i.changyong).length + '/'}}{{child.yuanwen && child.yuanwen.length}}
             </el-menu-item>
           </template>
         </el-sub-menu>
       </el-menu>
     </div>
-    <div style="width:100%" >
+    <!-- <div style="width:100%" >
       <el-input v-model="search" size="large" placeholder="Type to search" />
       <el-table :data="filterTableData" height="800" style="width: 100%" :row-class-name="tableRowClassName">
         <el-table-column prop="ming" label="药名"
@@ -62,6 +62,14 @@
         <el-table-column prop="qita" label="其他" />
        
       </el-table>
+    </div> -->
+     <div style="width:100%;margin-top:71px;" >
+      <p><b>{{data.title}}</b></p>
+      <p v-for="(p, index) in data.yuanwen" :key="index">
+        {{index+1}}.
+        <a v-if="p.jingfang" style="text-decoration:underline;color:blue" @click="() =>showJingFang(p.jingfang)">{{p.tiaobian}}</a>
+        <span v-else>{{p.tiaobian}}</span>
+         </p>
     </div>
 </div>
    
@@ -78,13 +86,17 @@ const filterTag = (value, row) => {
 }
 
 
-const danweiyao = ref([])
+const data = ref([])
 function showyao(item) {
-  danweiyao.value = item.danweiyao
+  data.value = item
+  console.log(123,item,data)
 }
 
+function showJingFang(key) {
+
+}
 const filterTableData = computed(() =>
-  danweiyao.value.filter(
+  yuanwen.value.filter(
     (data) =>
       !search.value ||
       data.ming.toLowerCase().includes(search.value.toLowerCase())
