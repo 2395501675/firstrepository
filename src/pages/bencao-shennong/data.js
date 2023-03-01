@@ -429,7 +429,7 @@ const menuList = [{
             tedian:`其性轻扬，能逐半表半里之邪`,
             jinji:`凡虚人气升呕吐，及阴虚火热炎上，法同所忌。`,
             paozhi:``,
-            qita:``,
+            qita:`北柴胡，南柴胡，银柴胡`,
             fangji:`小柴胡汤，大柴胡汤`,
             changyong:1
           },
