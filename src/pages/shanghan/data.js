@@ -4,6 +4,24 @@ const menuList = [{
     submenu: [
       {
         title: '辨脉法',
+       
+      },
+      {
+        title: '平脉法'
+      },
+    ]
+  },
+  {
+    title: '卷2',
+    lastIndex:2,
+    submenu: [{
+        title: '伤寒例'
+      },
+      {
+        title: '辨痓湿暍脉证'
+      },
+      {
+        title: '辨太阳病脉证并治上',
         yuanwen:[
           {
             tiaobian:'“太阳之为病,脉浮,头项强痛而恶寒。',
@@ -221,24 +239,12 @@ const menuList = [{
             `,
             jingfang:'xiaoqinglongtang',
           },
+          {
+            tiaobian:`四六：「伤寒」,心下有水气,咳而微喘,发热不渴,「小青龙汤」主之。服汤已,渴者,此寒去欲解也。
+            `,
+            jingfang:'xiaoqinglongtang',
+          },
         ]
-      },
-      {
-        title: '平脉法'
-      },
-    ]
-  },
-  {
-    title: '卷2',
-    lastIndex:2,
-    submenu: [{
-        title: '伤寒例'
-      },
-      {
-        title: '辨痓湿暍脉证'
-      },
-      {
-        title: '辨太阳病脉证并治上'
       },
     ]
   },
@@ -248,6 +254,158 @@ const menuList = [{
     submenu: [
       {
         title: '辨太阳病脉证并治中',
+        yuanwen:[
+          {
+            tiaobian:'四七：「太阳病」,外证未解,脉浮弱者,当以汗解,宜「桂枝汤」。',
+            jingfang:'',
+          },
+          {
+            tiaobian:'四八：「太阳病」,下之微喘者,表未解故也,「桂枝加厚朴杏仁汤」主之。',
+            jingfang:'guizhijiahoupoxingrentang',
+          },
+          {
+            tiaobian:'四九：「太阳病」外证未解，不可下也，下之为逆。欲解外者，宜「桂枝汤」',
+            jingfang:'',
+          },
+          {
+            tiaobian:`五十：「太阳病」先发汗不解 而复下之 脉浮者不愈。浮为在外，而反下之，故令不愈。
+            今脉浮，故知在外,须当解外则愈,宜「桂枝汤」主之。`,
+            jingfang:'',
+          },
+          {
+            tiaobian:`五一：「太阳病」,脉浮紧,无汗发热,身疼痛,八九日不解,表证仍在,此当发其汗。「麻黄汤」主之。
+            服药已,微除,其人发烦,目瞑，剧者必衄,衄乃解。所以然者,阳气重故也。`,
+            jingfang:'',
+          },
+          {
+            tiaobian:`五二：太阳病,脉浮紧,发热,身无汗,自衄者愈`,
+            jingfang:'',
+          },
+          {
+            tiaobian:`五三：二阳并病,「太阳」初得病时,发其汗。汗先出不澈,因转属「阳明」。续自
+            微汗出,不恶寒,若「太阳」病证不罢者,不可下,下之为逆。如此可小发汗。设面色缘缘正赤者,阳气怫鬰在表,当解之熏之。
+            若发汗不澈,不足言阳气怫鬰不得越,当汗不汗,其人烦躁,不知痛处,乍在腹中,乍在四肢，按之不可得，其人短气，但坐，以汗出不澈
+            故也，更发汗则愈。何以知汗出不澈，脉濇，故知也`,
+            jingfang:'',
+          },
+          {
+            tiaobian:`五四：脉浮数者,法当汗出而愈。若下之，身重心悸者，不可发汗，当自汗出乃解。
+            所以然者，尺中脉微，此里虚，须表里实，津液自和，便自汗出而愈。`,
+            jingfang:'',
+          },
+          {
+            tiaobian:`五五：脉浮紧者 法当身疼痛,宜以汗解之。假令尺中迟者,不可发汗。何以知其然？以营气不足,血少故也。`,
+            jingfang:'',
+          },
+          {
+            tiaobian:`五六：脉浮者,病在表,可发汗,宜「麻黄汤」`,
+            jingfang:'',
+          },
+          {
+            tiaobian:`五七：脉浮数者,可发汗,宜「麻黄汤」。`,
+            jingfang:'',
+          },
+          {
+            tiaobian:`五八：病常自汗出者,此为营气和。营气和者,外不谐,以卫气不共营气和谐故尔。
+            以营行脉中,卫行脉外,复发其汗,营卫和则愈，宜「桂枝汤」。
+            `,
+            jingfang:'',
+          },
+          {
+            tiaobian:`五九：病人脏无他病,时发热自汗出而不愈者，此卫气不和也。先其时发汗则愈，宜「桂枝汤」主之。
+            `,
+            jingfang:'',
+          },
+          {
+            tiaobian:`六十：「伤寒」,脉浮紧,不发汗,因致衄者,「麻黄汤」主之。
+            `,
+            jingfang:'',
+          },
+          {
+            tiaobian:`六一：「伤寒」,不大便六、七日,头痛有热者,与「承气汤」。
+            其小便清者,知不在里,仍在表也,当须发汗。若头痛者,必衄,宜「桂枝汤」。
+            `,
+            jingfang:'',
+          },
+          {
+            tiaobian:`六二：「伤寒」,发汗,解半日许,复烦,脉浮数者,可更发汗,宜「桂
+            枝汤」主之。
+            `,
+            jingfang:'',
+          },
+          {
+            tiaobian:`六三：凡病若发汗,若吐,若下,若亡津液,阴阳自和者，必自愈。
+            `,
+            jingfang:'',
+          },
+          {
+            tiaobian:`六四：大下之后 复发汗 小便不利者 亡津液故也。勿治之，得小便利,必自愈。
+            `,
+            jingfang:'',
+          },
+          {
+            tiaobian:`六五：下之后，复发汗，必振寒，脉微细。所以然者，以内外俱虚故也。
+            `,
+            jingfang:'',
+          },
+          {
+            tiaobian:`六六：下之后，复发汗，画日烦躁不得眠,夜而安静,不呕,不渴，无表证,脉沉微,身无大热者,「干姜附子汤」主之。
+            `,
+            jingfang:'ganjiangfuzitang',
+          },
+          {
+            tiaobian:`六七：发汗后,身疼痛,脉沉迟者,「桂枝」加「芍药」、「生姜」各一两,「人参」三两,「新加汤」主之。
+            `,
+            jingfang:'xinjiatang',
+          },
+          {
+            tiaobian:`六八：发汗后 不可更行「桂枝汤」。汗出而喘 无大热者，可与「麻黄杏仁甘草石膏汤」主之。
+            `,
+            jingfang:'mahuangxingrengancaoshigaotang',
+          },
+          {
+            tiaobian:`六九：发汗过多,其人叉手自冒心,心下悸欲得按者,「桂枝甘草汤」主之。
+            `,
+            jingfang:'guizhigancaotang',
+          },
+          {
+            tiaobian:`七十：发汗后，其人脐下下悸者,欲作「奔豚」,「茯苓桂枝甘草大枣汤」主之。
+            `,
+            jingfang:'fulingguizhigancaodazaotang',
+          },
+          {
+            tiaobian:`七一：发汗后,腹胀满者,「厚朴生姜半夏甘草人参汤」主之。
+            `,
+            jingfang:'houposhengjiangbanxiagancaorenshengtang',
+          },
+          {
+            tiaobian:`七二：「伤寒」,若吐若下后,心下逆满,气上冲胸,起则头眩,脉沉紧,发汗则动经,身为振振摇者,「茯苓桂枝白朮甘草汤」主之。
+            `,
+            jingfang:'fulingguizhibaizhugancaotang',
+          },
+          {
+            tiaobian:`七三：发汗,病不解,反恶寒者,虚故也。「芍药甘草附子汤」主之。
+            `,
+            jingfang:'shaoyaogancaofuzitang',
+          },
+          {
+            tiaobian:`七四：发汗 若下之 病仍不解,烦躁 四逆者 茯苓四逆汤主之。
+            `,
+            jingfang:'fulingsinitang',
+          },
+          {
+            tiaobian:`七五：发汗后,恶寒者,虚故也。不恶寒,但热者,实也。当和胃
+            气,与「调胃承气汤」
+            `,
+            jingfang:'tiaoweichengqitang',
+          },
+          {
+            tiaobian:`七六：太阳病,发汗后,大汗出,胃中干,烦躁不得眠,欲得水饮水者,少少与饮
+            之,令胃气和则愈。若脉浮,小便不利,微热,消渴者,「五苓散」主之。
+            `,
+            jingfang:'wulingsan',
+          },
+        ]
       },
     ]
   },
@@ -344,6 +502,88 @@ const menuList = [{
   },
 ]
 const jingfang = {
+  'fulingsinitang':{
+    title:'茯苓四逆汤',
+    zucheng:'茯苓 人参 附子 炙甘草 干姜',
+    yongfa:'分温三服',
+    jinji:`静脉瘤芍药炙甘草加重；脚冷炮附子加重；阳虚-干姜附子汤；阴阳两虚-人参四逆汤；发汗后，手脚冰凉脉微-四逆汤；`,
+    jiexi:` `,
+    shiyingzheng:'太阳证 烦躁，四逆；上交虚热，水往上冒，身体不受'
+  },
+  'shaoyaogancaofuzitang':{
+    title:'芍药甘草附子汤',
+    zucheng:'芍药3 炙甘草2  炮附子4',
+    yongfa:'分温三服',
+    jinji:`静脉瘤芍药炙甘草加重；脚冷炮附子加重`,
+    jiexi:` `,
+    shiyingzheng:'发汗，病不解，反恶寒；去杖汤'
+  },
+  'fulingguizhibaizhugancaotang':{
+    title:'茯苓桂枝白术甘草汤',
+    zucheng:'茯苓 桂枝 白术 甘草',
+    yongfa:'顿服',
+    jinji:``,
+    jiexi:`厚朴宽肠降逆除气，润肠；生姜入胃，人参甘草补液；半夏降逆；白术去湿，茯苓利水；晕眩得很厉害的时
+    候会吐的,就可用苓桂朮甘汤里面再加半夏。 `,
+    shiyingzheng:'水饮停在胃旁边，躺在床上不动不晕，起则头眩'
+  },
+  'houposhengjiangbanxiagancaorenshengtang':{
+    title:'厚朴生姜半夏甘草人参汤方',
+    zucheng:'炙厚朴3  生姜2  半夏2  人参1  炙甘草2',
+    yongfa:'顿服',
+    jinji:``,
+    jiexi:'厚朴宽肠降逆除气，润肠；生姜入胃，人参甘草补液；半夏降逆；',
+    shiyingzheng:'发汗后，腹胀满；虚胀'
+  },
+  'guizhigancaofulingdazaotang':{
+    title:'桂枝甘草茯苓大枣汤方',
+    zucheng:'茯苓 炙甘草2 大枣15  桂枝3',
+    yongfa:'顿服',
+    jinji:``,
+    jiexi:'肚脐中脾，上肾，下心，左肝右肺；肠胃津液发出去了，下焦水往上冲，茯苓排水，大枣补液',
+    shiyingzheng:'脐下悸，欲做奔豚；'
+  },
+  'guizhigancaotang':{
+    title:'桂枝甘草汤方',
+    zucheng:'桂枝4 炙甘草2',
+    yongfa:'顿服',
+    jinji:`桂枝下去让心脏喷射的力量很强,把停在心
+    很快的就气化了,心下悸是因为应该是水汽上来，结果冷水上来了；桂枝可以降冲逆；甘草补胃液`,
+    jiexi:'2：1',
+    shiyingzheng:'心下悸欲按；阳虚心悸'
+  },
+  'mahuangxingrengancaoshigaotang':{
+    title:'麻黄杏仁甘草石膏汤',
+    zucheng:'麻黄 杏仁 甘草 石膏',
+    yongfa:'顿服',
+    jinji:'胃口好，此方；不好，大青龙',
+    jiexi:'麻黄和石膏一起，就不会发汗，从小便解；麻黄把石膏带到肺；杏仁祛痰；甘草取缓停在胃利，解毒',
+    shiyingzheng:'出汗而喘，无大热'
+  },
+  'xinjiatang':{
+    title:'桂枝加芍药生姜人参新加汤方',
+    zucheng:'桂枝3 芍药4 炙甘草2 人参3 生姜4 大枣12',
+    yongfa:'顿服',
+    jinji:'',
+    jiexi:'',
+    shiyingzheng:'身疼痛，脉沉迟（发汗太过，津液伤到）如果汗流不止时桂枝加附子汤'
+  },
+  'ganjiangfuzitang':{
+    title:'干姜附子汤',
+    zucheng:'干姜1 附子3',
+    yongfa:'顿服',
+    jinji:'',
+    jiexi:'',
+    shiyingzheng:'阳虚，白天不好睡，烦躁，晚上正常安静好睡'
+  },
+  'guizhijiahoupoxingrentang':{
+    title:'桂枝加厚朴杏仁汤',
+    zucheng:'桂枝3 芍药3 甘草3 生姜3 大枣12 炙厚朴2 杏仁50枚',
+    yongfa:'覆取微似汗',
+    jinji:'',
+    jiexi:'',
+    shiyingzheng:'下之微喘，表未解'
+  },
   'mahuangtang':{
     title:'小青龙汤',
     zucheng:'麻黄3 桂枝3 芍药3 细辛3 干姜3 炙甘草3 五味子 半夏3',
