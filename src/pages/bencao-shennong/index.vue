@@ -1,8 +1,9 @@
 <template>
-  <div style="display: flex">
-    <div style="min-width: 270px">
+  <div>
+    <div>
       <el-menu
         default-active="2"
+        mode="horizontal"
         class="el-menu-vertical-demo"
         @open="handleOpen"
         @close="handleClose"
