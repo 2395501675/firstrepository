@@ -157,18 +157,7 @@
         style="width: 100%;"
         :row-class-name="tableRowClassName"
       >
-       <el-table-column type="expand">
-          <template #default="props">
-            <div m="4">
-             <p m="t-0 b-2"><b>功能主治: </b> {{ props.row.gongneng }}</p>
-             <p m="t-0 b-2"><b>特点:</b>  {{ props.row.tedian }}</p>
-              <p m="t-0 b-2"><b>禁忌:</b>  {{ props.row.jinji }}</p>
-              <p m="t-0 b-2"><b>炮制: </b> {{ props.row.paozhi }}</p>
-              <p m="t-0 b-2"><b>方剂:</b>  {{ props.row.fangji }}</p>
-              <p m="t-0 b-2"><b>其他: </b> {{ props.row.qita }}</p>
-            </div>
-          </template>
-        </el-table-column>
+       
         <el-table-column
           prop="ming"
           label="药名"
@@ -184,6 +173,19 @@
           </template>
         </el-table-column>
         <el-table-column prop="xingweiguijing" label="性味归经" />
+        <el-table-column type="expand">
+          <template #default="props">
+            <div m="4">
+              <img src="" alt="">
+             <p m="t-0 b-2"><b>功能主治: </b> {{ props.row.gongneng }}</p>
+             <p m="t-0 b-2"><b>特点:</b>  {{ props.row.tedian }}</p>
+              <p m="t-0 b-2"><b>禁忌:</b>  {{ props.row.jinji }}</p>
+              <p m="t-0 b-2"><b>炮制: </b> {{ props.row.paozhi }}</p>
+              <p m="t-0 b-2"><b>方剂:</b>  {{ props.row.fangji }}</p>
+              <p m="t-0 b-2"><b>其他: </b> {{ props.row.qita }}</p>
+            </div>
+          </template>
+        </el-table-column>
       </el-table>
     </div>
   </div>
