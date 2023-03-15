@@ -42,7 +42,7 @@
         </el-sub-menu>
       </el-menu>
     </div>
-    <div style="width: 100%;padding:10px 0;">
+    <div style="width: 100%; padding: 10px 0;">
       <el-table :data="zongyi.wuxing" v-if="false" style="width: 100%">
         <el-table-column prop="weiyi" label="味义" />
         <el-table-column prop="seyi" label="色义" />
@@ -54,135 +54,172 @@
         <el-table-column prop="bingjin" label="五病所禁" />
         <el-table-column prop="suoshang" label="五病所伤" />
       </el-table>
-      <table border style="border-collapse:collapse;">
-          <tr>
-            <th colspan="6">药性</th>
-            <th colspan="6">归经</th>
-          </tr>
-          <tr>
-            <th colspan="2">阳</th>
-            <th colspan="2">阴</th>
-            <th rowspan="2" colspan="2">相从性</th>
-            <th>五行</th>
-            <td>木</td>
-            <td>火</td>
-            <td>土</td>
-            <td>金</td>
-            <td>水</td>
-          </tr>
-           <tr>
-            <th colspan="2">四气</th>
-            <th colspan="2">五味</th>
-            <th>五色</th>
-            <td>青</td>
-            <td>赤</td>
-            <td>黄</td>
-            <td>白</td>
-            <td>黑</td>
-          </tr>
-          <tr>
-            <td>阳</td>
-            <td>阴</td>
-           <td>阳</td>
-            <td>阴</td>
-            <td>阳</td>
-            <td>阴</td>
+      <table border style="border-collapse: collapse">
+        <tr>
+          <th colspan="6">药性</th>
+          <th colspan="6">归经</th>
+        </tr>
+        <tr>
+          <th colspan="2">阳</th>
+          <th colspan="2">阴</th>
+          <th rowspan="2" colspan="2">相从性</th>
+          <th>五行</th>
+          <td>木</td>
+          <td>火</td>
+          <td>土</td>
+          <td>金</td>
+          <td>水</td>
+        </tr>
+        <tr>
+          <th colspan="2">四气</th>
+          <th colspan="2">五味</th>
+          <th>五色</th>
+          <td>青</td>
+          <td>赤</td>
+          <td>黄</td>
+          <td>白</td>
+          <td>黑</td>
+        </tr>
+        <tr>
+          <td>阳</td>
+          <td>阴</td>
+          <td>阳</td>
+          <td>阴</td>
+          <td>阳</td>
+          <td>阴</td>
 
-            <th>脏经</th>
-            <td>肝</td>
-            <td>心</td>
-            <td>脾</td>
-            <td>肺</td>
-            <td>肾</td>
-          </tr>
-          <tr>
-            <td>温热</td>
-            <td>寒凉</td>
-           <td>辛甘淡</td>
-            <td>酸苦咸</td>
-            <td rowspan="4">升浮</td>
-            <td rowspan="4">沉降</td>
+          <th>脏经</th>
+          <td>肝</td>
+          <td>心</td>
+          <td>脾</td>
+          <td>肺</td>
+          <td>肾</td>
+        </tr>
+        <tr>
+          <td>温热</td>
+          <td>寒凉</td>
+          <td>辛甘淡</td>
+          <td>酸苦咸</td>
+          <td rowspan="4">升浮</td>
+          <td rowspan="4">沉降</td>
 
-            <th>腑经</th>
-            <td>胆</td>
-            <td>小肠</td>
-            <td>胃</td>
-            <td>大肠</td>
-            <td>膀胱</td>
-          </tr>
-          <tr>
-            <td>气厚</td>
-            <td>气薄</td>
-            <td>味薄</td>
-            <td>味厚</td>
+          <th>腑经</th>
+          <td>胆</td>
+          <td>小肠</td>
+          <td>胃</td>
+          <td>大肠</td>
+          <td>膀胱</td>
+        </tr>
+        <tr>
+          <td>气厚</td>
+          <td>气薄</td>
+          <td>味薄</td>
+          <td>味厚</td>
 
-            <th>五味</th>
-            <td>酸</td>
-            <td>苦</td>
-            <td>甘</td>
-            <td>辛</td>
-            <td>咸</td>
-          </tr>
-           <tr>
-            <td>发热与温</td>
-            <td>发泄散表</td>
-            <td>通窍利渗湿</td>
-            <td>泄降</td>
+          <th>五味</th>
+          <td>酸</td>
+          <td>苦</td>
+          <td>甘</td>
+          <td>辛</td>
+          <td>咸</td>
+        </tr>
+        <tr>
+          <td>发热与温</td>
+          <td>发泄散表</td>
+          <td>通窍利渗湿</td>
+          <td>泄降</td>
 
-            <th>五味之用</th>
-            <td>涩收</td>
-            <td>泻燥坚</td>
-            <td>补和缓</td>
-            <td>散润行</td>
-            <td>下软坚</td>
-          </tr>
-          <tr>
-            <td>浮</td>
-            <td>降</td>
-            <td>升</td>
-            <td>沉</td>
+          <th>五味之用</th>
+          <td>涩收</td>
+          <td>泻燥坚</td>
+          <td>补和缓</td>
+          <td>散润行</td>
+          <td>下软坚</td>
+        </tr>
+        <tr>
+          <td>浮</td>
+          <td>降</td>
+          <td>升</td>
+          <td>沉</td>
 
-            <th></th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
       </table>
       <el-input v-model="search" size="large" placeholder="Type to search" />
       <el-table
         :data="filterTableData"
         height="600"
-        style="width: 100%;"
+        style="width: 100%;margin-bottom:30px;"
         :row-class-name="tableRowClassName"
       >
-       
         <el-table-column
           prop="ming"
           label="药名"
           :filter-method="filterTag"
-          :filters="[{ text: '常用', value: 1 }]"
+          :filters="[
+            { text: '常用', value: 1 },
+            { text: '阳药', value: 3 },
+          ]"
         >
           <template #default="scope">
+            {{ scope.row.index }}.
             <el-tag
               :type="scope.row.changyong === 1 ? 'success' : 'info'"
               disable-transitions
               >{{ scope.row.ming }}</el-tag
             >
+            <el-icon
+              title="阳药"
+              style="vertical-align: middle; margin-left: 10px"
+              v-if="scope.row.yangyao === 1"
+              ><Sunny color="red"
+            /></el-icon>
           </template>
         </el-table-column>
         <el-table-column prop="xingweiguijing" label="性味归经" />
         <el-table-column type="expand">
           <template #default="props">
-            <div m="4">
-              <img src="" alt="">
-             <p m="t-0 b-2"><b>功能主治: </b> {{ props.row.gongneng }}</p>
-             <p m="t-0 b-2"><b>特点:</b>  {{ props.row.tedian }}</p>
-              <p m="t-0 b-2"><b>禁忌:</b>  {{ props.row.jinji }}</p>
-              <p m="t-0 b-2"><b>炮制: </b> {{ props.row.paozhi }}</p>
-              <p m="t-0 b-2"><b>方剂:</b>  {{ props.row.fangji }}</p>
-              <p m="t-0 b-2"><b>其他: </b> {{ props.row.qita }}</p>
+            <div m="4" style="display: flex">
+              <div class="left">
+                <div >
+                  <div v-for="(ziji, i) in props.row.ziji" :key="i">
+                    <p m="t-0 b-2">
+                      <b>{{ ziji[0] }}: </b> {{ ziji[1] }}
+                    </p>
+                  </div>
+                </div>
+                <el-button @click.prevent="showYuanwen = !showYuanwen"
+                  >原文</el-button
+                >
+                <div v-show="showYuanwen">
+                  <div
+                    v-for="(yuanwen, i) in props.row.yuanwen.split('#')"
+                    :key="i"
+                  >
+                    <p>{{ yuanwen }}</p>
+                  </div>
+                </div>
+
+                
+              </div>
+              <div class="right">
+                <img
+                  v-if="props.row.img"
+                  style="width: 200px"
+                  :src="props.row.img"
+                  alt=""
+                />
+                <h5>现在说明:</h5>
+                <p v-for="(xiandai, i) in props.row.xiandai" :key="i">
+                  <b>{{ xiandai[0] }}: </b>
+                  <span>{{ xiandai[1] }} </span>
+                </p>
+              </div>
             </div>
           </template>
         </el-table-column>
@@ -192,15 +229,21 @@
 </template>
 <script setup>
 import {
+  Sunny,
+} from '@element-plus/icons-vue'
+import {
   menuList,
   zongyi
 } from './data.js'
 import { ref, computed } from 'vue'
 const search = ref('')
 const filterTag = (value, row) => {
+  if (value === 3) {
+    return row.yangyao === 1
+  }
   return row.changyong === value
 }
-
+const showYuanwen = ref(false)
 
 const danweiyao = ref([])
 function showyao (item) {
@@ -229,5 +272,8 @@ li {
 .el-table .success-row {
   --el-table-tr-bg-color: var(--el-color-success-light-9);
 }
-
+.right {
+  border-left: 1px solid #333;
+  padding-left: 10px;
+}
 </style>
