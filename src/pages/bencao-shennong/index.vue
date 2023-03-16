@@ -187,7 +187,7 @@
             <div m="4" style="display: flex">
               <div class="left">
                 <div >
-                  <div v-for="(ziji, i) in props.row.ziji" :key="i">
+                  <div v-show="!showYuanwen" v-for="(ziji, i) in props.row.ziji" :key="i">
                     <p m="t-0 b-2">
                       <b>{{ ziji[0] }}: </b> {{ ziji[1] }}
                     </p>
@@ -204,8 +204,6 @@
                     <p>{{ yuanwen }}</p>
                   </div>
                 </div>
-
-                
               </div>
               <div class="right">
                 <img
