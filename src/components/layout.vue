@@ -5,10 +5,8 @@
     <router-link to="/jingui">金匮要略</router-link>
     <router-link to="/shanghan">伤寒论</router-link>
     <router-link to="/zhenjiu">针灸</router-link>
-    <router-link to="/yao1">执药1</router-link>
-    <router-link to="/yao2">执药2</router-link>
-    <router-link to="/yaozong">执药综合</router-link>
-    <router-link to="/fagui">执药-法规</router-link>
+    <router-link to="/zhiyao">执药</router-link>
+    <router-link to="/zhiyi">执医</router-link>
   </div>
   <p>只有你们人类才会考虑“时间”的问题，而其他生命都是考虑“当下”。</p>
   <p>

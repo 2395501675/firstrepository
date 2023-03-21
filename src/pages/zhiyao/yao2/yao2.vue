@@ -23,7 +23,7 @@
 <script setup>
 import { ref } from 'vue'
 import {data,xiaojie,miaosha,chengyao} from './data.js'
-import HelloWorld from '../../components/HelloWorld.vue'
+import HelloWorld from '../../../components/HelloWorld.vue'
 
 const showXiaojieFlag = ref(false)
 const showMiaoshaFlag = ref(false)

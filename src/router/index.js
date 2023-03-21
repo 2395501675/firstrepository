@@ -1,5 +1,160 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-
+const zhiyiChildren= [
+    {
+        path: 'jichu',
+        name: 'jichu',
+        component: () => import('@/pages/zhiyi/jichu/jichu.vue'),
+        meta: {
+            title: '中医基础理论',
+        },
+    },
+    {
+        path: 'zhenduan',
+        name: 'zhenduan',
+        component: () => import('@/pages/zhiyao/yao2/yao2.vue'),
+        meta: {
+            title: '中医诊断学',
+        },
+    },
+    {
+        path: 'zhongyaoxue',
+        name: 'zhongyaoxue',
+        component: () => import('@/pages/zhiyao/yaozong/yaozong.vue'),
+        meta: {
+            title: '中药学',
+        },
+    },
+    {
+        path: 'fangjixue',
+        name: 'fangjixue',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '方剂学',
+        },
+    },
+    {
+        path: 'zhongyijingdian',
+        name: 'zhongyijingdian',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '中医经典',
+        },
+    },
+    {
+        path: 'zhongyineikexue',
+        name: 'zhongyineikexue',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '中医内科学',
+        },
+    },
+    {
+        path: 'zhongyiwaikexue',
+        name: 'zhongyiwaikexue',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '中医外科学',
+        },
+    },
+    {
+        path: 'zhongyifukexue',
+        name: 'zhongyifukexue',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '中医妇科学',
+        },
+    },
+    {
+        path: 'zhongnyierkexue',
+        name: 'zhongnyierkexue',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '中医儿科学',
+        },
+    },
+    {
+        path: 'zhenjiuxue',
+        name: 'zhenjiuxue',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '针灸学',
+        },
+    },
+    {
+        path: 'zhenduanjichuxue',
+        name: 'zhenduanjichuxue',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '诊断基础学',
+        },
+    },
+    {
+        path: 'neikexue',
+        name: 'neikexue',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '内科学',
+        },
+    },
+    {
+        path: 'chuanranbingxue',
+        name: 'chuanranbingxue',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '传染病学',
+        },
+    },
+    {
+        path: 'yixuelunlixue',
+        name: 'yixuelunlixue',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '医学伦理学',
+        },
+    },
+    {
+        path: 'weishengfagui',
+        name: 'weishengfagui',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '卫生法规',
+        },
+    },
+]
+const zhiyaoChildren= [
+    {
+        path: 'yao1',
+        name: 'yao1',
+        component: () => import('@/pages/zhiyao/yao1/yao1.vue'),
+        meta: {
+            title: '药1',
+        },
+    },
+    {
+        path: 'yao2',
+        name: 'yao2',
+        component: () => import('@/pages/zhiyao/yao2/yao2.vue'),
+        meta: {
+            title: '药2',
+        },
+    },
+    {
+        path: 'yaozong',
+        name: 'yaozong',
+        component: () => import('@/pages/zhiyao/yaozong/yaozong.vue'),
+        meta: {
+            title: '药综',
+        },
+    },
+    {
+        path: 'fagui',
+        name: 'fagui',
+        component: () => import('@/pages/zhiyao/fagui/fagui.vue'),
+        meta: {
+            title: '法规',
+        },
+    },
+]
 const basicRoutes = [
     {
         path: '/',
@@ -42,40 +197,31 @@ const basicRoutes = [
         },
     },
     {
-        path: '/yao1',
-        name: 'yao1',
-        component: () => import('@/pages/yao1/yao1.vue'),
+        path: '/zhiyao',
+        name: 'zhiyao',
+        component: () => import('@/pages/zhiyao/index.vue'),
         meta: {
-            title: 'yao1',
+            title: 'zhiyao',
         },
+        children:[
+            ...zhiyaoChildren
+        ]
     },
     {
-        path: '/yao2',
-        name: 'yao2',
-        component: () => import('@/pages/yao2/yao2.vue'),
+        path: '/zhiyi',
+        name: 'zhiyi',
+        component: () => import('@/pages/zhiyi/index.vue'),
         meta: {
-            title: 'yao2',
+            title: 'zhiyao',
         },
+        children:[
+            ...zhiyiChildren
+        ]
     },
-    {
-        path: '/yaozong',
-        name: 'yaozong',
-        component: () => import('@/pages/yaozong/yaozong.vue'),
-        meta: {
-            title: 'yaozong',
-        },
-    },
-    {
-        path: '/fagui',
-        name: 'fagui',
-        component: () => import('@/pages/fagui/fagui.vue'),
-        meta: {
-            title: 'fagui',
-        },
-    },
+    
 ]
 
-
+export {zhiyiChildren,zhiyaoChildren}
 export const router = createRouter({
     // 创建一个 hash 历史记录。
     history: createWebHashHistory(import.meta.env.VITE_PUBLIC_PATH),
