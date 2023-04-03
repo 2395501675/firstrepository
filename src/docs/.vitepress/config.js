@@ -4,7 +4,7 @@ import path from 'path'
 export default defineConfig({
   base:'/firstrepository/',
   ignoreDeadLinks: true, 
-  title: 'vitepress-test',
+  title: '宏五中医',
   description: '阮一峰的技术周刊',
   lang: 'zh-CN',
   lastUpdated: true,
@@ -20,7 +20,7 @@ export default defineConfig({
   themeConfig: {
     nav: [{
         text: 'Home',
-        link: '/'
+        link: '/简介'
       },
       {
         text: 'External',
