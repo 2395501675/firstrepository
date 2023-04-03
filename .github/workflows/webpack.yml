@@ -13,10 +13,10 @@ jobs:
     - name: Install and Build
       run: |
         npm install
-        npm run build
+        npm run docs:build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: dist
+        FOLDER: src/docs/.vitepress/dist
