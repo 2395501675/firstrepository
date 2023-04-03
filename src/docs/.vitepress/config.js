@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import fs from 'fs'
 import path from 'path'
 export default defineConfig({
+  base:'/firstrepository/',
   ignoreDeadLinks: true, 
   title: 'vitepress-test',
   description: '阮一峰的技术周刊',
