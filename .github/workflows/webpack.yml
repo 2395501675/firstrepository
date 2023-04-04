@@ -19,9 +19,7 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: src/docs/.vitepress/dist
-  algolia:
-    runs-on: ubuntu-latest   
+        FOLDER: src/docs/.vitepress/dist  
     - uses: actions/checkout@v2
     - name: Get the content of algolia.json as config
       id: algolia_config
