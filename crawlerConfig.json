@@ -5,15 +5,14 @@
   "maxDepth": 10,
   "selectors": {
     "lvl0": {
-      "selector": "",
-      "defaultValue": "Documentation"
+      "selector": "h1"
     },
-    "lvl1": ".content h1",
-    "lvl2": ".content h2",
-    "lvl3": ".content h3",
-    "lvl4": ".content h4",
-    "lvl5": ".content h5",
-    "content": ".content p, .content li"
+    "lvl1": "h1",
+    "lvl2": "h2",
+    "lvl3": "h3",
+    "lvl4": "h4",
+    "lvl5": "h5",
+    "content": "p,li"
   },
   "selectors_exclude": [
     "aside",
