@@ -39,9 +39,9 @@ export default defineConfig({
       copyright: 'Copyright © 2023-present Plantree'
     },
     algolia: {
-      appId: 'JMQN3OHTS2',
-      apiKey: '9bb35b7fbb4b3ae36bb0f2ac9af77b5e',
-      indexName: 'ruanyf-weekly'
+      appId: 'ZQ8EJL0206',
+      apiKey: '6be1afac8180986bfdbd6631c53f2995',
+      indexName: 'lnn-zhongyi'
     },
   },
   plugins:[
