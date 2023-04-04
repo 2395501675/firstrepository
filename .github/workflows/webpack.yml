@@ -22,12 +22,12 @@ jobs:
         BRANCH: gh-pages
         FOLDER: src/docs/.vitepress/dist  
 
-    - name: Push indices to Algolia
-      uses: signcl/docsearch-scraper-action@master
-      run: |
-       0install add jq https://apps.0install.net/utils/jq.xml
-        echo "config=$(cat crawlerConfig.json | jq -r tostring)" >> $GITHUB_OUTPUT
-      env:
-        APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
-        API_KEY: ${{ secrets.API_KEY }}
-        CONFIG: ${{ steps.algolia_config.outputs.config }}
+    # - name: Push indices to Algolia
+    #   uses: signcl/docsearch-scraper-action@master
+    #   run: |
+    #    0install add jq https://apps.0install.net/utils/jq.xml
+    #     echo "config=$(cat crawlerConfig.json | jq -r tostring)" >> $GITHUB_OUTPUT
+    #   env:
+    #     APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
+    #     API_KEY: ${{ secrets.API_KEY }}
+    #     CONFIG: ${{ steps.algolia_config.outputs.config }}
