@@ -64,7 +64,7 @@ function getFiles(filePath,parentFile) {
     const stat = fs.statSync(path);
     if (stat.isFile()) {
       config.push({
-        text: file.split('.')[0],
+        text: file.split('.md')[0],
         link: parentFile?`/weekly/${parentFile}/${file}`:`/weekly/${file}`
       });
     } else if (stat.isDirectory()) {
