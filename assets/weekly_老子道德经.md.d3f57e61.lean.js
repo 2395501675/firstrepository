@@ -1,1 +1,0 @@
-import{_ as p,o as a,c as e,Q as t}from"./chunks/framework.7f652428.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"weekly/老子道德经.md","lastUpdated":1682672291000}'),r={name:"weekly/老子道德经.md"},o=t("",97),h=[o];function i(l,n,s,d,c,_){return a(),e("div",null,h)}const b=p(r,[["render",i]]);export{m as __pageData,b as default};
